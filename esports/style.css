@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: #000;
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    display: flex;
+
+}
+
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 70%;
+    backdrop-filter: blur(15px);
+}
+
+.left {
+    z-index: 3;
+    width: 55%;
+    height: 100vh;
+    background: transparent;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: 2rem;
+
+    padding: 6rem;
+
+    color: #fff
+}
+
+.left h1 {
+    font-size: clamp(2.5rem,4vw,4rem);
+    line-height: 1;
+}
+
+.left p {
+    font-size: clamp(1.1rem,2vw,1.5rem);
+    line-height: 1.5
+}
+
+.right {
+    z-index: 3;
+    width: 45%;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.4);
+
+
+    
+    overflow: hidden auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+
+    padding: 2rem;
+
+    gap: 2rem;
+}
+
+.right form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.right h3 {
+    font-size: 3rem;
+}
+
+.right label {
+    font-size: 1.5rem
+}
+
+.right input {
+    width: 100%;
+    background: #fff;
+    border-radius: 5px;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+@media only screen and (max-width:750px) {
+
+    body {
+        flex-direction: column;
+    }
+
+    .left {
+        width: 100%;
+        height:100vh;
+
+        padding:2rem;
+    }
+
+    .right {
+        width: 100%;
+        height:auto;
+        color:#fff;
+        background:#000;
+    }
+
+
+}
+
+/* h3 {
+    text-align: center;
+
+}
+
+.about {
+    text-align: left;
+    font-size: medium;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="date"],
+input[type="name"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgb(10, 10, 10);
+    border-radius: 5px;
+    margin: 7px;
+}
+
+input[type="submit"] {
+    background-color: rgb(12, 134, 77);
+    color: rgb(225, 234, 231);
+    padding: 12px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+
+}
+
+input[type="submit"]:hover {
+    background-color: burlywood;
+}
+
+fieldset {
+    border: 1px solid rgb(10, 10, 10);
+    border-radius: 5px;
+    width: 100%;
+} */
+a{
+    color:rgb(33, 33, 69);
+}
+a:hover{
+    color:rgb(44, 44, 112);
+}
+h3{
+    font-family: 'Balsamiq Sans', cursive;
+}
+fieldset{
+    border-color: black;
+}
+fieldset p{
+
+    padding:25px;   
+}
+
+.btn1{
+    border-radius: 1rem;
+    width:150px;
+    height:30px;
+    margin-top: 15px;
+    margin-left: 180px;
+    size: 100px;
+    font-size: larger;
+}
+
+
+.btn1:hover{
+   background-color: rgb(91, 91, 121);
+}
+.box3 p{
+display:flex;
+}
